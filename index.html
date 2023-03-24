@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="container">
+            <div class="card_wrapper">
+                <div class="img_inner">
+                    <img src="/img/Main image.jpg" alt="" class="main">
+                    <img src="/img/Thumb container.jpg" alt="" class="slider1">
+                    <img src="/img/Thumb image1.jpg" alt="" class="slider2">
+                    <img src="/img/Thumb image.jpg" alt="" class="slider3">
+                </div>
+                <div class="content_inner">
+                    <h1 class="prod_name">Базова бавовняна футболка</h1>
+                        <div class="price" id="cost" value ="26.99">$26.99</div>
+                            <div class="rating">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                                <div class="prod_descr">Ця класична футболка з чистої органічної бавовни виділяється логотипом Tommy Hilfiger внизу.</div>
+                                <div class="sizes_wrapper">
+                                    <h2 class="size">Розмір</h2>
+                                    <h2 class="directory"><a>Довідник розмірів</a></h2>
+                                </div>
+                                    <div class="sizes_inner">
+                                        <button class="sizes">XS</button>
+                                        <button class="sizes">S</button>
+                                        <button class="sizes">M</button>
+                                        <button class="sizes">L</button>
+                                        <button class="sizes">XL</button>
+                                    </div>
+                                
+                                <div class="amount">
+                                    <h2 class="amounts">Кількість</h2>
+                                        <button class = "neg" onclick="decrement()">-</button>
+                                        <input class = "field_counter" id="quantity" type="text" value="1" min="1" max="100">
+                                        <button class = "pos" onclick="increment()">+</button>
+                                      
+                                </div>
+
+                                <button class="buy">Додати в кошик</button>
+
+                                <!-- accordion -->
+                                <div class="accordion-container">
+                                    <p class="accordion" style="border-top: 1px solid #999;">характеристики</p>
+                                    <div class="accordion-content">
+                                      <ul>
+                                        <li>Трикотаж з чистої органічної бавовни</li>
+                                        <li>Кругла горловина</li>
+                                        <li>Логотип Tommy Hilfiger 1985 року на подолі</li>
+                                        <li>Фірмові деталі Tommy Hilfiger</li>
+                                        <li>На рукаві вишитий логотип Tommy Hilfiger</li>
+                                      </ul>
+                                        
+                                      <br />
+                                    </div>
+                                  
+                                    <p class="accordion">Розмір і крій</p>
+                                    <div class="accordion-content">
+                                      <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ea odit dicta illum adipisci, consequatur numquam veniam harum hic temporibus possimus esse voluptatem omnis necessitatibus vero in facere totam iusto similique quas sapiente earum ipsam aut? Praesentium saepe, eaque aspernatur sapiente facere iusto? Aliquam libero dolorum inventore, illo animi magni eius nulla cupiditate quis, alias qui minus ratione possimus itaque sapiente sint assumenda consectetur sit at earum quod. Porro earum blanditiis delectus animi libero iste praesentium at sequi cupiditate numquam corrupti facilis nihil necessitatibus dolorum temporibus odio laudantium omnis, eos voluptates ipsam dolore quis enim ex! Pariatur cumque obcaecati modi.
+                                      </p>
+                                      <br />
+                                    </div>
+                                  
+                                    <p class="accordion">Склад і догляд</p>
+                                    <div class="accordion-content">
+                                      <p>
+                                        Text line 2
+                                        <br />
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis eveniet quae totam optio aspernatur? Officia, architecto! Quaerat distinctio quo iure animi inventore voluptas ut quidem reprehenderit aperiam reiciendis. Quod, esse!</p>
+                                        <br />
+                                        Text line 3
+                                        <br />
+                                        Text line 4
+                                      </p>
+                                      <br />
+                                    </div>
+                                </div>
+
+
+            </div>
+        </div>
+    </div>
+   
+
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
