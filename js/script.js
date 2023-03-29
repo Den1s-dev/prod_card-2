@@ -29,6 +29,46 @@ stars.forEach((star, index) => {
 
 
 
+//size buttons
+
+// function buttonsOfSize(){
+//   const sizes = document.querySelectorAll('.sizes');
+
+//   sizes.forEach(size => {
+//       size.addEventListener('click', function() {
+//           // Удаление класса "active" с предыдущей активной кнопки, кроме кнопки "XS"
+//           const activeSize = document.querySelector('.sizes');
+//           if (activeSize) {
+//               activeSize.classList.remove('active');
+//           }
+          
+//           // Добавление класса "active" на нажатую кнопку
+//           this.classList.add('active');
+//       });
+//   });
+  
+// }
+
+
+// Получаем все кнопки в контейнере
+var buttons = document.querySelectorAll('.sizes label');
+
+// Добавляем обработчик клика для каждой кнопки
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Удаляем класс "active" у всех кнопок
+    buttons.forEach(function(button) {
+      button.classList.remove('active');
+    });
+    // Добавляем класс "active" к нажатой кнопке
+    button.classList.add('active');
+  });
+});
+
+
+
+
+
 //price counter
 
 // Получаем элементы со страницы
@@ -44,7 +84,7 @@ const price = parseFloat(priceElement.getAttribute("value"));
 function updatePrice() {
   const quantity = parseInt(quantityElement.value);
   const newPrice = (price * quantity).toFixed(2);
-  priceElement.innerText = `${newPrice}`;
+  priceElement.innerText = '$' + `${newPrice}`;
 }
 
 //уменьшение количества товара
